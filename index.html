@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tomer's TravelTip</title>
+</head>
+
+<body>
+    <h1>Tomer's TravelTip</h1>
+    <div class="searchBar">
+        <input type="text" name="search" class="search" />
+        <button class="searchButton">SEARCH</button>
+    </div>
+    <div class="butns">
+        <button class="copy">Copy Location</button>
+        <button class="my_location">My Location</button>
+    </div>
+    <h3 class="location"></h3>
+    <main>
+
+        <div class="weather">
+            <h2 class="weatherTitle">Weather Information:</h2>
+            <h4 class="weatherLocation"></h4>
+            <h4 class="temp"></h4>
+            <h4 class="description"></h4>
+            <h4 class="wind"></h4>
+        </div>
+        <div class="map">
+            <div id="map" style="width: 800px; height: 400px;">
+            </div>
+        </div>
+    </main>
+
+    <input style="position: absolute; top: -200px" type="text" name="copy" class="clipboard" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
